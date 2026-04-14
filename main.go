@@ -37,7 +37,7 @@ func main() {
 			fmt.Println("Correct!")
 			score++
 		}else{
-			fmt.Println("Wrong!")
+			fmt.Println("Wrong! correct answer is:", record[1])
 		}
 	}
 	fmt.Println("your score:" , score, "/", len(records))
