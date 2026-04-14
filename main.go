@@ -24,6 +24,8 @@ func main() {
 		return
 	}
 	score := 0
+	fmt.Println("Press Enter to start quiz...")
+	fmt.Scanln()
 
 	for _, record := range records{
 		var userAnswer string
@@ -31,7 +33,7 @@ func main() {
 		fmt.Println(record[0] + "= ?")
 		fmt.Scanln(&userAnswer)
 
-		if strings.TrimSpace(userAnswer) == strings.TrimSpace(record[1]){
+		if strings.ToLower(strings.TrimSpace(userAnswer)) == strings. ToLower(strings.TrimSpace(record[1])){
 			score++
 		}
 	}
