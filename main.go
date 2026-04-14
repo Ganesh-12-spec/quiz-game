@@ -40,5 +40,5 @@ func main() {
 			fmt.Println("Wrong! correct answer is:", record[1])
 		}
 	}
-	fmt.Println("your score:" , score, "/", len(records))
+	fmt.Printf("\nYou got %d out of %d correct\n", score, len(records))
 }
