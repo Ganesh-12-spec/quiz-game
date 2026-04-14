@@ -34,7 +34,10 @@ func main() {
 		fmt.Scanln(&userAnswer)
 
 		if strings.ToLower(strings.TrimSpace(userAnswer)) == strings. ToLower(strings.TrimSpace(record[1])){
+			fmt.Println("Correct!")
 			score++
+		}else{
+			fmt.Println("Wrong!")
 		}
 	}
 	fmt.Println("your score:" , score, "/", len(records))
